@@ -10,7 +10,8 @@
   display: none;
 }
 
-
+a:link, a:visited { color: #8d67a8; text-decoration: none; }
+a:hover, a:active { color: #b0b0b0; }
 
 body {
   font: normal 17px/1.5 'PT Serif', "Helvetica Neue", "Helvetica", Arial, sans-serif;
@@ -29,8 +30,6 @@ article p {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
-  a:link, a:hover, a:focus, a:visited { color: #333; text-decoration: none; }
-  a:hover { text-decoration: underline; }
 }
 
 h1 { font-size: 1.5em; }
@@ -39,6 +38,11 @@ h3 { font-size: 1.2em; }
 h4 { font-size: 1em; }
 h5 { font-size: .8em; }
 h6 { font-size: .6em; }
+
+ul{ 
+    margin: 0;
+    padding: 0;
+}
 
 .heading {
   font-size: 2.3em;
@@ -201,6 +205,89 @@ article a.btn {
     transform: translateY(10px);
   }
 }
+
+/*
+* Account links
+* ========================================================================== */
+
+ul.accounts li
+{
+    display: inline-block;
+    padding: 1em 0.5em 1em;
+}
+
+ul.accounts li:first-child
+{
+    margin-left: 0;
+}
+
+ul.accounts li a
+{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 2em;
+    padding: 0.5em 0.5em;
+    text-align: center;
+    border-radius: 5px;
+    background: #8d67a8;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+    ul.accounts li a:hover
+    {
+        background: #b0b0b0;
+    }			
+
+/*
+* Science images
+* ========================================================================== */
+.science-image{
+    display: inline-block;
+    width: 40%;
+    padding: 20px 20px;
+    float: left;
+}
+
+/*
+* Code/data list and buttons
+* ========================================================================== */
+
+ul.codedata li
+{
+    display: inline-block;
+    padding: 1em 1em 1em;
+}
+
+ul.codedata li:first-child
+{
+    margin-left: 0;
+}
+
+.repo
+{
+    display: inline-block;
+    width: 100%;
+    background: #8d67a8;
+    color: #ffffff !important;
+    font-size: 1em;
+    padding: 0.5em 0.5em;
+    margin: 0 0.5em;
+    text-align: center;
+    border-radius: 5px;
+    -moz-transition: all .25s ease-in-out;
+    -webkit-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    float: left;
+}
+    .repo:hover
+    {
+        background: #b0b0b0;
+    }			
 
 
 

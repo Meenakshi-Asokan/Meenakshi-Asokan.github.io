@@ -2,6 +2,8 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta name="keywords" content="Meenakshi Asokan, neuroscience">
 
   <title>
     {% if page.crawlertitle %}
@@ -20,7 +22,11 @@
 
   <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|Roboto+Condensed:700&subset=latin' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-
+        
+  <!-- Add icon fonts -->
+  <link rel="stylesheet" href="{{ "/assets/fonts/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/fonts/academicons/css/academicons.min.css" | prepend: site.baseurl }}">	
+  
   <meta property="og:url" content="{{ page.url | absolute_url }}">
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ page.title }}">
@@ -38,6 +44,6 @@
   {% else %}
     <meta property="og:image" content="{{ site.baseurl | prepend: site.url }}{{ site.images }}/bg.svg">
     <meta name="twitter:image" content="{{ site.baseurl | prepend: site.url }}{{ site.images }}/bg.svg">
-  {% endif %}
+    {% endif %}
 
 </head>

@@ -113,7 +113,7 @@ a {
     &:hover,
     &:focus,
     &:active {
-      color: #766257;
+      color: #8d67a8;
     }
   }
 }
@@ -291,8 +291,8 @@ article {
 * Footer
 * ========================================================================== */
 .blog-footer {
-  height: 4em;
-  margin: 5em auto 0;
+  height: auto;
+  margin: 5em 0em 3em;
   font-size: 70%;
   border-top: 1px solid #ddd;
   text-transform: uppercase;
@@ -331,4 +331,28 @@ article {
     margin-top: 10px;
     display: block;
   }
+}
+
+/*
+* Science content boxes
+* ========================================================================== */
+.scibox{
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px 0px;
+}
+
+.scibox h4{
+    color: #8d67a8;
+    margin: 0 1em;
+}
+
+.scibox h5{
+    margin: 0 1em;
+}
+
+.scibox p{
+    margin: 0 1em 1em;
 }

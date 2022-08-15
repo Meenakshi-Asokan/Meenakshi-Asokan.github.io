@@ -1,0 +1,50 @@
+{
+    "IMG_6857.jpg": {
+        "src": "images/photos/IMG_6857.jpg",
+        "mtime": 1660544131.0393507,
+        "date": "",
+        "size": [
+            3024,
+            4032
+        ],
+        "type": "image",
+        "description": "",
+        "thumbnail": "images/thumbnails/IMG_6857.jpg",
+        "thumbnail_size": [
+            120,
+            160
+        ]
+    },
+    "IMG_6861.jpg": {
+        "src": "images/photos/IMG_6861.jpg",
+        "mtime": 1660544097.6223094,
+        "date": "",
+        "size": [
+            3024,
+            4032
+        ],
+        "type": "image",
+        "description": "",
+        "thumbnail": "images/thumbnails/IMG_6861.jpg",
+        "thumbnail_size": [
+            120,
+            160
+        ]
+    },
+    "IMG_6875-EFFECTS.jpg": {
+        "src": "images/photos/IMG_6875-EFFECTS.jpg",
+        "mtime": 1660544086.506407,
+        "date": "",
+        "size": [
+            3024,
+            4032
+        ],
+        "type": "image",
+        "description": "",
+        "thumbnail": "images/thumbnails/IMG_6875-EFFECTS.jpg",
+        "thumbnail_size": [
+            120,
+            160
+        ]
+    }
+}

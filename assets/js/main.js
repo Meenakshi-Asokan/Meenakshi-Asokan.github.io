@@ -3,11 +3,10 @@ var slides = {}
 function createSlides() {
   $("a.gallery-photo").each(function (photo_id, photo) {
     var slide = {
-      w:     photo.getAttribute('data-width'),
-      h:     photo.getAttribute('data-height'),
-      msrc:  photo.getElementsByTagName('img')[0].getAttribute('src'),
+      w:    photo.getAttribute('data-width'),
+      h:    photo.getAttribute('data-height'),
+      msrc: photo.getElementsByTagName('img')[0].getAttribute('src'),
       title: photo.getElementsByTagName('img')[0].getAttribute('alt'),
-      date:  photo.getAttribute('data-date'),
     };
 
     if (photo.getAttribute('data-type') == 'image')
@@ -16,7 +15,7 @@ function createSlides() {
       slide['html'] = '<video style="margin: 0px auto; height: 100%; max-width: 100%; max-height: 100%; display: block" data-index="' + photo.getAttribute('data-index') +
                       '" controls><source src="' + photo.getAttribute('href') + '" type="video/mp4"></video>';
 
-    var gallery_id = photo.getAttribute('data-gallery');
+    var gallery_id = parseInt(photo.getAttribute('data-gallery'));
     if (!(gallery_id in slides))
       slides[gallery_id] = [];
 
@@ -31,18 +30,6 @@ function getThumbBounds(gallery, index) {
   return {x: rect.left, y: rect.top + pageYScroll, w: rect.width};
 }
 
-function addCaptionHTML(item, captionEl, isFake) {
-  if(!item.title && !item.date) {
-    captionEl.children[0].innerText = '';
-    return false;
-  }
-  captionEl.children[0].innerHTML = item.title;
-  if (item.date) {
-    captionEl.children[0].innerHTML += '<p class="caption-date">' + item.date + '</p>';
-  }
-  return true;
-}
-
 function openPhotoSwipe() {
   var index = parseInt($(this).attr('data-index'))
   var gallery_id = $(this).attr('data-gallery')
@@ -50,7 +37,6 @@ function openPhotoSwipe() {
   var options = {
     index: index,
     getThumbBoundsFn: function (id) { return getThumbBounds(gallery_id, id) },
-    addCaptionHTMLFn: addCaptionHTML,
     preload: [2,5],
     zoomEl: false,
     shareEl: true,

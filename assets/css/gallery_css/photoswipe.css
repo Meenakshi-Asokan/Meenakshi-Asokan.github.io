@@ -142,15 +142,15 @@
 	stretched thumbnail or div placeholder element (see below)
 	style is added to avoid flickering in webkit/blink when layers overlap
 */
-/*
+
 .pswp__img--placeholder {
   -webkit-backface-visibility: hidden; }
-*/
+
 /*
 	div element that matches size of large image
 	large image loads on top of it
 */
-/*
+
 .pswp__img--placeholder--blank {
   background: #222; }
 
@@ -159,7 +159,7 @@
   height: auto !important;
   left: 0;
   top: 0; }
-*/
+
 /*
 	Error message appears when image is not loaded
 	(JS option errorMsg controls markup)

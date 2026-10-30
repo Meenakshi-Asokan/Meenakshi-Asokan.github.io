@@ -13,3 +13,12 @@
   "media-queries",
   "syntax-highlighting"
 ;
+
+// Custom video styling
+.science-video {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
